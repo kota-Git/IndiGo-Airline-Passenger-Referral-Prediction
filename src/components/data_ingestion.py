@@ -12,6 +12,7 @@ from src.exception import referal_pred_Exception
 from src.logger import logging
 from src.data_access.refer_data import  pass_refer_Data
 
+
 class DataIngestion:
     def __init__(self,data_ingestion_config:DataIngestionConfig=DataIngestionConfig()):
         """
@@ -103,3 +104,4 @@ class DataIngestion:
             return data_ingestion_artifact
         except Exception as e:
             raise referal_pred_Exception(e, sys) from e
+        
