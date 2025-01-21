@@ -5,7 +5,8 @@ import certifi
 from src.exception import referal_pred_Exception
 from src.logger import logging
 from src.constants import DATABASE_NAME, MONGODB_URL_KEY
-
+from dotenv import load_dotenv
+load_dotenv()
 ca = certifi.where()
 
 class MongoDBClient:

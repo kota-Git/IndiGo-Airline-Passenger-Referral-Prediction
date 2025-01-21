@@ -18,3 +18,8 @@ logging.basicConfig(
     format="[ %(asctime)s ] %(name)s - %(levelname)s - %(message)s",
     level=logging.DEBUG,
 )
+
+
+
+# Suppress  to stop pymongo debug logs
+logging.getLogger("pymongo").setLevel(logging.WARNING)

@@ -1,0 +1,58 @@
+columns:
+  airline: object
+  overall: float64
+  author: object
+  review_date: int64
+  customer_review: object
+  aircraft: object
+  traveller_type: object
+  cabin: object
+  route: object
+  date_flown: int64
+  seat_comfort: float64
+  cabin_service: float64
+  food_bev: float64
+  entertainment: float64
+  ground_service: float64
+  value_for_money: float64
+  recommended: object
+
+numerical_columns:
+  - overall
+  - review_date
+  - date_flown
+  - seat_comfort
+  - cabin_service
+  - food_bev
+  - entertainment
+  - ground_service
+  - value_for_money
+
+categorical_columns:
+  - airline
+  - author
+  - customer_review
+  - aircraft
+  - traveller_type
+  - cabin
+  - route
+  - recommended
+
+dtypes:
+  airline: "object"
+  overall: "float64"
+  author: "object"
+  review_date: "int64"
+  customer_review: "object"
+  aircraft: "object"
+  traveller_type: "object"
+  cabin: "object"
+  route: "object"
+  date_flown: "int64"
+  seat_comfort: "float64"
+  cabin_service: "float64"
+  food_bev: "float64"
+  entertainment: "float64"
+  ground_service: "float64"
+  value_for_money: "float64"
+  recommended: "object"
