@@ -56,3 +56,32 @@ dtypes:
   ground_service: "float64"
   value_for_money: "float64"
   recommended: "object"
+
+
+
+
+# Datatransformation
+num_features:
+- overall
+- seat_comfort
+- food_bev
+- sentiment_score
+
+
+
+or_columns:   # columns to be ordinal encoded like ['SEX'/Gender] means Yes or No
+- airline
+- cabin
+oh_columns: []   # columns to be one hot encoded like EDUCATION', 'MARRIAGE']
+
+
+transform_columns:
+- sentiment_score
+
+
+drop_columns:
+- customer_review
+- author
+- review_date
+- value_for_money
+- cabin_service
